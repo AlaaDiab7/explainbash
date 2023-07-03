@@ -1,14 +1,13 @@
-# 软件学报文章：基于双重信息检索的Bash代码注释自动生成方法
+# Software Journal article: Bash code comment automatic generation method based on dual information retrieval
 
-这里是软件学报论文“基于双重信息检索的Bash代码注释自动生成方法”的数据集与源代码
+Here is the data set and source code of the Journal of Software 'Method for Automatically Generating Bash Code Comments Based on Dual Information Retrieval'
 
-## 语料库
+## Corpus
 
-数据集是来自NL2Bash研究共享的预料库与NLC2CMD竞赛的官方数据，其中存在重复数据，我们删除重复数据后构建了包含10592个数据的语料库。包括train.csv，test.csv和valid.csv。
+The data set is from the NL2Bash Research Shared Prediction Library and the official data of the NLC2CMD competition. There are duplicate data in it. After deleting the duplicate data, we constructed a corpus containing 10592 data. Including train.csv, test.csv and valid.csv.
 
-## 如何运行代码
+## How to run the code
 
-- 下载该项目
-- 我们的项目包含了两个文件夹：IR_Code和dataset，其中IR_Code是实验所需的代码，dataset是实验所需的数据集。
-- IR_Code文件中包含了两个文件：explainBash.py和Information_Retrival.py。explainBash.py为主方法，也是运行的入口，在这里我们需要确认读取的训练集和测试集（信息检索方法不需要验证集）的路径是否正确。Information_Retrival.py是检索方法的具体代码，explainBash.py调用Information_Retrival.py的方法检索出测试集的所有代码注释，然后将生成的代码注释和真实注释进行评价指标计算。
-
+- Download the item
+- Our project contains two folders: IR_Code and dataset, where IR_Code is the code required for the experiment, and dataset is the data set required for the experiment.
+- The IR_Code file contains two files: explainBash.py and Information_Retrival.py. explainBash.py is the main method and the entry point of the operation. Here we need to confirm whether the path of the read training set and test set (the information retrieval method does not need the verification set) is correct. Information_Retrival.py is the specific code of the retrieval method. explainBash.py calls the method of Information_Retrival.py to retrieve all code annotations of the test set, and then calculates the evaluation indicators for the generated code annotations and real annotations.
