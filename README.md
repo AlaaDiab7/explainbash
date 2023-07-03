@@ -11,3 +11,8 @@ The data set is from the NL2Bash Research Shared Prediction Library and the offi
 - Download the item
 - Our project contains two folders: IR_Code and dataset, where IR_Code is the code required for the experiment, and dataset is the data set required for the experiment.
 - The IR_Code file contains two files: explainBash.py and Information_Retrival.py. explainBash.py is the main method and the entry point of the operation. Here we need to confirm whether the path of the read training set and test set (the information retrieval method does not need the verification set) is correct. Information_Retrival.py is the specific code of the retrieval method. explainBash.py calls the method of Information_Retrival.py to retrieve all code annotations of the test set, and then calculates the evaluation indicators for the generated code annotations and real annotations.
+
+
+# Interesting other references:
+BASHEXPLAINER: Retrieval-Augmented Bash Code Comment Generation based on Fine-tuned CodeBERT
+https://arxiv.org/pdf/2206.13325.pdf
